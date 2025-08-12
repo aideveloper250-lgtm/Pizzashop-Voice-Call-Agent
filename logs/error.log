@@ -1,0 +1,10 @@
+2025-07-24 10:48:42,305 - __main__ - ERROR - validate_config:126 - Missing required environment variables: SYNTHFLOW_API_KEY, SYNTHFLOW_AGENT_ID
+2025-07-24 10:48:42,305 - __main__ - ERROR - <module>:678 - Failed to initialize application: Missing required environment variables: SYNTHFLOW_API_KEY, SYNTHFLOW_AGENT_ID
+Traceback (most recent call last):
+  File "C:\Users\USER\Desktop\AI-Call-Agent\app.py", line 675, in <module>
+    app = create_app()
+  File "C:\Users\USER\Desktop\AI-Call-Agent\app.py", line 409, in create_app
+    validate_config()
+  File "C:\Users\USER\Desktop\AI-Call-Agent\app.py", line 127, in validate_config
+    raise ValueError(error_msg)
+ValueError: Missing required environment variables: SYNTHFLOW_API_KEY, SYNTHFLOW_AGENT_ID
